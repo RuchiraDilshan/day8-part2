@@ -21,7 +21,24 @@ export default function Login(){
 
         }
     }
+    return(
+        <div>
+            <h1>Login here</h1>
+            <form>
+                <label>Username:</label>
+                <input type="text" name="username" onChange={getTextinput} ></input>
+            </form>
 
-    
+            <form>
+                <label>Password:</label>
+                <input type="password" name="password" onChange={getTextinput} ></input>
+            </form>
+
+            <button onClick={authenticate}>Login</button>
+
+
+        </div>
+    );
+
    
 }
